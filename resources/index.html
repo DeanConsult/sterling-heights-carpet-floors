@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flooring Resources | Sterling Heights Carpet and Floors</title>
+  <link rel="canonical" href="https://www.shcarpetandfloors.com/resources/" />
+  <meta name="description" content="Flooring tips, care guides, and a directory of local home service professionals in Sterling Heights MI and Metro Detroit." />
+  <meta name="robots" content="index, follow" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --brown: #7c4a1f; --brown-dark: #5e3718; --dark: #1c1008; --white: #ffffff; --gray: #f5f6f8; --muted: #6b7280; --radius: 8px; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; color: #1a1a1a; background: var(--white); }
+    a { color: inherit; text-decoration: none; }
+    nav { background: var(--dark); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-brand { color: var(--white); font-weight: 800; font-size: 1.05rem; line-height: 1.2; }
+    .nav-brand span { color: #e0a870; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.85); font-size: 0.92rem; font-weight: 500; }
+    .btn-call { background: var(--brown); color: var(--white); padding: 9px 20px; border-radius: var(--radius); font-weight: 700; font-size: 0.88rem; white-space: nowrap; }
+    .hamburger { display: none; background: none; border: none; font-size: 1.6rem; color: var(--white); cursor: pointer; padding: 4px 8px; }
+    @media (max-width: 768px) {
+      .nav-links { display: flex; position: fixed; top: 64px; left: 0; right: 0; background: var(--dark); flex-direction: column; gap: 0; padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+      .nav-links.open { max-height: 320px; padding-top: 8px; padding-bottom: 8px; }
+      .nav-links a { display: block; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+      .btn-call { display: none; }
+      .hamburger { display: block; }
+    }
+    .ph { background: var(--dark); padding: 60px 24px; }
+    .ph-inner { max-width: 1100px; margin: 0 auto; }
+    .ph-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #e0a870; margin-bottom: 10px; }
+    .ph h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; color: var(--white); margin-bottom: 14px; }
+    .ph p { color: rgba(255,255,255,0.72); max-width: 560px; line-height: 1.75; }
+    .tips { max-width: 1100px; margin: 0 auto; padding: 80px 24px; }
+    .section-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--brown); margin-bottom: 10px; }
+    .section-title { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: var(--dark); margin-bottom: 40px; }
+    .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .tip-card { background: var(--gray); border-radius: 12px; padding: 28px 24px; border-left: 4px solid var(--brown); }
+    .tip-card h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 10px; }
+    .tip-card p { font-size: 0.87rem; color: var(--muted); line-height: 1.7; }
+    .dir { background: var(--gray); padding: 80px 24px; }
+    .dir-inner { max-width: 1100px; margin: 0 auto; }
+    .dir-inner .section-title { margin-bottom: 16px; }
+    .dir-intro { color: var(--muted); line-height: 1.7; max-width: 680px; margin-bottom: 48px; }
+    .dir-cat { margin-bottom: 48px; }
+    .dir-cat h3 { font-size: 1rem; font-weight: 800; color: var(--dark); border-bottom: 2px solid var(--brown); padding-bottom: 8px; margin-bottom: 16px; display: inline-block; }
+    .dir-links { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+    .dir-link { background: var(--white); border-radius: 8px; padding: 12px 16px; font-size: 0.87rem; font-weight: 600; color: var(--brown); border: 1px solid #e5e7eb; display: flex; align-items: center; gap: 8px; }
+    .dir-link:hover { border-color: var(--brown); }
+    .dir-link::before { content: '&#8594;'; }
+    footer { background: var(--dark); padding: 48px 24px 24px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+    @media (max-width: 640px) { .footer-inner { grid-template-columns: 1fr; } }
+    .footer-brand { font-weight: 800; font-size: 1.05rem; color: var(--white); margin-bottom: 12px; }
+    .footer-brand span { color: #e0a870; }
+    .footer-desc { color: rgba(255,255,255,0.55); font-size: 0.85rem; line-height: 1.7; }
+    .footer-col h4 { color: rgba(255,255,255,0.5); font-size: 0.72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 14px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a { color: rgba(255,255,255,0.7); font-size: 0.88rem; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+    .footer-bottom p { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+    .footer-bottom a { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand"><a href="/">Sterling Heights <span>Carpet and Floors</span></a></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About Us</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/#contact">Free Estimate</a></li>
+    </ul>
+    <a href="tel:5863716409" class="btn-call">Call 586-371-6409</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </div>
+</nav>
+
+<div class="ph">
+  <div class="ph-inner">
+    <p class="ph-label">Helpful Resources</p>
+    <h1>Flooring Tips &amp; Local Home Services Directory</h1>
+    <p>Flooring care advice from our experts, plus a directory of trusted local home service companies in Sterling Heights and Metro Detroit.</p>
+  </div>
+</div>
+
+<div class="tips">
+  <p class="section-label">From Our Experts</p>
+  <h2 class="section-title">Flooring Tips &amp; Care Guides</h2>
+  <div class="tips-grid">
+    <div class="tip-card">
+      <h3>Vacuum Carpet Regularly</h3>
+      <p>The most important thing you can do to extend the life of your carpet is vacuum regularly — at least once a week in high-traffic areas. This prevents dirt from settling deep into the fibers where it can cause premature wear and discoloration.</p>
+    </div>
+    <div class="tip-card">
+      <h3>Clean Spills Immediately</h3>
+      <p>Always blot — never rub — liquid spills on carpet or hardwood as soon as they happen. Rubbing spreads the stain and damages fibers. Use a clean white cloth and work from the outside of the spill inward. For stubborn stains, call a professional cleaner.</p>
+    </div>
+    <div class="tip-card">
+      <h3>Use Furniture Pads on Hardwood</h3>
+      <p>Place felt or rubber pads under all furniture legs to prevent scratches on hardwood floors. Even lightweight chairs can cause micro-scratches over time. Replace the pads every 12&ndash;18 months as they wear down and lose effectiveness.</p>
+    </div>
+    <div class="tip-card">
+      <h3>Control Indoor Humidity for Hardwood</h3>
+      <p>Hardwood floors expand and contract with humidity changes. Keep your home&rsquo;s relative humidity between 35&ndash;55% year-round. Excessive moisture can cause warping; extremely dry conditions can cause cracking and gaps between boards.</p>
+    </div>
+    <div class="tip-card">
+      <h3>Use Doormats at Every Entry</h3>
+      <p>Placing doormats at every entry point &mdash; especially exterior doors &mdash; dramatically reduces the amount of dirt, moisture, and grit tracked onto your floors. This is one of the simplest and most effective things you can do to protect any type of flooring.</p>
+    </div>
+    <div class="tip-card">
+      <h3>Professional Carpet Cleaning Every 12&ndash;18 Months</h3>
+      <p>Even with regular vacuuming, carpets need professional deep cleaning every 12&ndash;18 months to remove embedded dirt, allergens, and bacteria. Hot-water extraction (steam cleaning) is the most effective method and is recommended by most carpet manufacturers to maintain your warranty.</p>
+    </div>
+  </div>
+</div>
+
+<div class="dir">
+  <div class="dir-inner">
+    <p class="section-label">Local Business Directory</p>
+    <h2 class="section-title">Trusted Home Services in Metro Detroit</h2>
+    <p class="dir-intro">A directory of local home service companies we are happy to refer. We are not affiliated with these businesses &mdash; this is simply a helpful resource for homeowners in the Sterling Heights and Metro Detroit area.</p>
+
+    <div class="dir-cat">
+      <h3>Carpet &amp; Flooring</h3>
+      <div class="dir-links">
+        <a href="https://www.rhillsflooring.com" class="dir-link" target="_blank" rel="noopener noreferrer">rhillsflooring.com</a>
+        <a href="https://www.macombflooring.com" class="dir-link" target="_blank" rel="noopener noreferrer">macombflooring.com</a>
+        <a href="https://www.shelbyflooring.com" class="dir-link" target="_blank" rel="noopener noreferrer">shelbyflooring.com</a>
+        <a href="https://www.westbloomflooring.com" class="dir-link" target="_blank" rel="noopener noreferrer">westbloomflooring.com</a>
+        <a href="https://www.detroitflooring.com" class="dir-link" target="_blank" rel="noopener noreferrer">detroitflooring.com</a>
+        <a href="https://www.metrodetroitflooring.com" class="dir-link" target="_blank" rel="noopener noreferrer">metrodetroitflooring.com</a>
+        <a href="https://www.michiganflooring.com" class="dir-link" target="_blank" rel="noopener noreferrer">michiganflooring.com</a>
+        <a href="https://www.greatlaakesflooring.com" class="dir-link" target="_blank" rel="noopener noreferrer">greatlakesflooring.com</a>
+        <a href="https://www.carpetonedetroit.com" class="dir-link" target="_blank" rel="noopener noreferrer">carpetonedetroit.com</a>
+      </div>
+    </div>
+
+    <div class="dir-cat">
+      <h3>Roofing</h3>
+      <div class="dir-links">
+        <a href="https://www.rhillsroofing.com" class="dir-link" target="_blank" rel="noopener noreferrer">rhillsroofing.com</a>
+        <a href="https://www.shelbytwproofing.com" class="dir-link" target="_blank" rel="noopener noreferrer">shelbytwproofing.com</a>
+        <a href="https://www.westbloomroofing.com" class="dir-link" target="_blank" rel="noopener noreferrer">westbloomroofing.com</a>
+        <a href="https://www.wilmingtonroofingexperts.com" class="dir-link" target="_blank" rel="noopener noreferrer">wilmingtonroofingexperts.com</a>
+        <a href="https://www.detroitroofingco.com" class="dir-link" target="_blank" rel="noopener noreferrer">detroitroofingco.com</a>
+        <a href="https://www.michiganroofingpros.com" class="dir-link" target="_blank" rel="noopener noreferrer">michiganroofingpros.com</a>
+        <a href="https://www.sterlingheightsroofing.com" class="dir-link" target="_blank" rel="noopener noreferrer">sterlingheightsroofing.com</a>
+        <a href="https://www.macombcountyroofing.com" class="dir-link" target="_blank" rel="noopener noreferrer">macombcountyroofing.com</a>
+      </div>
+    </div>
+
+    <div class="dir-cat">
+      <h3>Plumbing</h3>
+      <div class="dir-links">
+        <a href="https://www.sterlingheightsplumbingpros.com" class="dir-link" target="_blank" rel="noopener noreferrer">sterlingheightsplumbingpros.com</a>
+        <a href="https://www.macombplumbingpros.com" class="dir-link" target="_blank" rel="noopener noreferrer">macombplumbingpros.com</a>
+        <a href="https://www.shelbytwpplumbingpros.com" class="dir-link" target="_blank" rel="noopener noreferrer">shelbytwpplumbingpros.com</a>
+        <a href="https://www.rochesterhillsplumbing.com" class="dir-link" target="_blank" rel="noopener noreferrer">rochesterhillsplumbing.com</a>
+        <a href="https://www.westbloomplumbing.com" class="dir-link" target="_blank" rel="noopener noreferrer">westbloomplumbing.com</a>
+        <a href="https://www.detroitplumbingco.com" class="dir-link" target="_blank" rel="noopener noreferrer">detroitplumbingco.com</a>
+        <a href="https://www.metrodetroitplumbing.com" class="dir-link" target="_blank" rel="noopener noreferrer">metrodetroitplumbing.com</a>
+        <a href="https://www.michiganplumbingpros.com" class="dir-link" target="_blank" rel="noopener noreferrer">michiganplumbingpros.com</a>
+        <a href="https://www.macombcountyplumbing.com" class="dir-link" target="_blank" rel="noopener noreferrer">macombcountyplumbing.com</a>
+        <a href="https://www.oaklandcountyplumbing.com" class="dir-link" target="_blank" rel="noopener noreferrer">oaklandcountyplumbing.com</a>
+        <a href="https://www.plumbersterlingheights.com" class="dir-link" target="_blank" rel="noopener noreferrer">plumbersterlingheights.com</a>
+        <a href="https://www.plumbingdetroit.com" class="dir-link" target="_blank" rel="noopener noreferrer">plumbingdetroit.com</a>
+      </div>
+    </div>
+
+    <div class="dir-cat">
+      <h3>HVAC</h3>
+      <div class="dir-links">
+        <a href="https://www.sterlingheightshvac.com" class="dir-link" target="_blank" rel="noopener noreferrer">sterlingheightshvac.com</a>
+        <a href="https://www.macombhvac.com" class="dir-link" target="_blank" rel="noopener noreferrer">macombhvac.com</a>
+        <a href="https://www.rochesterhillshvac.com" class="dir-link" target="_blank" rel="noopener noreferrer">rochesterhillshvac.com</a>
+        <a href="https://www.shelbytwphvac.com" class="dir-link" target="_blank" rel="noopener noreferrer">shelbytwphvac.com</a>
+        <a href="https://www.westbloomhvac.com" class="dir-link" target="_blank" rel="noopener noreferrer">westbloomhvac.com</a>
+        <a href="https://www.detroithvacpros.com" class="dir-link" target="_blank" rel="noopener noreferrer">detroithvacpros.com</a>
+        <a href="https://www.michiganairandheating.com" class="dir-link" target="_blank" rel="noopener noreferrer">michiganairandheating.com</a>
+        <a href="https://www.metrodetroithvac.com" class="dir-link" target="_blank" rel="noopener noreferrer">metrodetroithvac.com</a>
+        <a href="https://www.furnacerepairdetroit.com" class="dir-link" target="_blank" rel="noopener noreferrer">furnacerepairdetroit.com</a>
+        <a href="https://www.acrepairdetroit.com" class="dir-link" target="_blank" rel="noopener noreferrer">acrepairdetroit.com</a>
+        <a href="https://www.macombhvacpros.com" class="dir-link" target="_blank" rel="noopener noreferrer">macombhvacpros.com</a>
+        <a href="https://www.hvacsterlingheights.com" class="dir-link" target="_blank" rel="noopener noreferrer">hvacsterlingheights.com</a>
+        <a href="https://www.michiganfurnacerepair.com" class="dir-link" target="_blank" rel="noopener noreferrer">michiganfurnacerepair.com</a>
+      </div>
+    </div>
+
+    <div class="dir-cat">
+      <h3>Electrical</h3>
+      <div class="dir-links">
+        <a href="https://www.evansvilleelectricianpros.com" class="dir-link" target="_blank" rel="noopener noreferrer">evansvilleelectricianpros.com</a>
+        <a href="https://www.sterlingheightselectrician.com" class="dir-link" target="_blank" rel="noopener noreferrer">sterlingheightselectrician.com</a>
+        <a href="https://www.macombelectrician.com" class="dir-link" target="_blank" rel="noopener noreferrer">macombelectrician.com</a>
+        <a href="https://www.rochesterhillselectrician.com" class="dir-link" target="_blank" rel="noopener noreferrer">rochesterhillselectrician.com</a>
+        <a href="https://www.shelbytwpelectrician.com" class="dir-link" target="_blank" rel="noopener noreferrer">shelbytwpelectrician.com</a>
+        <a href="https://www.westbloomelectrician.com" class="dir-link" target="_blank" rel="noopener noreferrer">westbloomelectrician.com</a>
+        <a href="https://www.detroitelectricianpros.com" class="dir-link" target="_blank" rel="noopener noreferrer">detroitelectricianpros.com</a>
+        <a href="https://www.michiganelectrician.com" class="dir-link" target="_blank" rel="noopener noreferrer">michiganelectrician.com</a>
+        <a href="https://www.metrodetroitelectrical.com" class="dir-link" target="_blank" rel="noopener noreferrer">metrodetroitelectrical.com</a>
+        <a href="https://www.electriciansterlingheights.com" class="dir-link" target="_blank" rel="noopener noreferrer">electriciansterlingheights.com</a>
+        <a href="https://www.macombcountyelectrician.com" class="dir-link" target="_blank" rel="noopener noreferrer">macombcountyelectrician.com</a>
+        <a href="https://www.oaklandcountyelectrician.com" class="dir-link" target="_blank" rel="noopener noreferrer">oaklandcountyelectrician.com</a>
+        <a href="https://www.michiganelectricalcontractor.com" class="dir-link" target="_blank" rel="noopener noreferrer">michiganelectricalcontractor.com</a>
+      </div>
+    </div>
+
+    <div class="dir-cat">
+      <h3>Other Home Services</h3>
+      <div class="dir-links">
+        <a href="https://www.sterlingheightspaintingpros.com" class="dir-link" target="_blank" rel="noopener noreferrer">sterlingheightspaintingpros.com</a>
+        <a href="https://www.detroitlandscaping.com" class="dir-link" target="_blank" rel="noopener noreferrer">detroitlandscaping.com</a>
+        <a href="https://www.macombhomerepair.com" class="dir-link" target="_blank" rel="noopener noreferrer">macombhomerepair.com</a>
+        <a href="https://www.michiganwindowreplacement.com" class="dir-link" target="_blank" rel="noopener noreferrer">michiganwindowreplacement.com</a>
+        <a href="https://www.detroitgaragedoors.com" class="dir-link" target="_blank" rel="noopener noreferrer">detroitgaragedoors.com</a>
+        <a href="https://www.sterlingheightscleaning.com" class="dir-link" target="_blank" rel="noopener noreferrer">sterlingheightscleaning.com</a>
+        <a href="https://www.macombpestcontrol.com" class="dir-link" target="_blank" rel="noopener noreferrer">macombpestcontrol.com</a>
+        <a href="https://www.michiganinsulation.com" class="dir-link" target="_blank" rel="noopener noreferrer">michiganinsulation.com</a>
+        <a href="https://www.detroithomeimprovement.com" class="dir-link" target="_blank" rel="noopener noreferrer">detroithomeimprovement.com</a>
+        <a href="https://www.macombcountygeneralcontractor.com" class="dir-link" target="_blank" rel="noopener noreferrer">macombcountygeneralcontractor.com</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Sterling Heights <span>Carpet and Floors</span></div>
+      <p class="footer-desc">Carpet and flooring installation in Sterling Heights MI and Metro Detroit. 20+ years of experience. Shop-at-home service. Free estimates.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/#contact">Free Estimate</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="/services/">Carpeting</a></li>
+        <li><a href="/services/">Hardwood Floors</a></li>
+        <li><a href="/services/">Laminate Floors</a></li>
+        <li><a href="/services/">Commercial Flooring</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="yr"></span> Sterling Heights Carpet and Floors. All rights reserved.</p>
+    <div style="display:flex;gap:16px;">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/resources/">Resources</a>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  document.getElementById("hamburger").addEventListener("click", function() {
+    document.getElementById("navLinks").classList.toggle("open");
+  });
+</script>
+</body>
+</html>

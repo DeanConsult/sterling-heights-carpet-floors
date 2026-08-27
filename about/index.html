@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Sterling Heights Carpet and Floors</title>
+  <link rel="canonical" href="https://www.shcarpetandfloors.com/about/" />
+  <meta name="description" content="About Sterling Heights Carpet and Floors — 20+ years of carpet and flooring in Sterling Heights MI. We bring the store to your door. Free estimates." />
+  <meta name="robots" content="index, follow" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --brown: #7c4a1f; --brown-dark: #5e3718; --dark: #1c1008; --white: #ffffff; --gray: #f5f6f8; --muted: #6b7280; --radius: 8px; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; color: #1a1a1a; background: var(--white); }
+    a { color: inherit; text-decoration: none; }
+    nav { background: var(--dark); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-brand { color: var(--white); font-weight: 800; font-size: 1.05rem; line-height: 1.2; }
+    .nav-brand span { color: #e0a870; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.85); font-size: 0.92rem; font-weight: 500; }
+    .btn-call { background: var(--brown); color: var(--white); padding: 9px 20px; border-radius: var(--radius); font-weight: 700; font-size: 0.88rem; white-space: nowrap; }
+    .hamburger { display: none; background: none; border: none; font-size: 1.6rem; color: var(--white); cursor: pointer; padding: 4px 8px; }
+    @media (max-width: 768px) {
+      .nav-links { display: flex; position: fixed; top: 64px; left: 0; right: 0; background: var(--dark); flex-direction: column; gap: 0; padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+      .nav-links.open { max-height: 320px; padding-top: 8px; padding-bottom: 8px; }
+      .nav-links a { display: block; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+      .btn-call { display: none; }
+      .hamburger { display: block; }
+    }
+    .ph { background: var(--dark); padding: 60px 24px; }
+    .ph-inner { max-width: 1100px; margin: 0 auto; }
+    .ph-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #e0a870; margin-bottom: 10px; }
+    .ph h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; color: var(--white); margin-bottom: 14px; }
+    .ph p { color: rgba(255,255,255,0.72); max-width: 560px; line-height: 1.75; }
+    .story { max-width: 1100px; margin: 0 auto; padding: 80px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    @media (max-width: 768px) { .story { grid-template-columns: 1fr; } }
+    .story-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--brown); margin-bottom: 10px; }
+    .story h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: var(--dark); margin-bottom: 20px; }
+    .story p { color: var(--muted); line-height: 1.8; margin-bottom: 16px; }
+    .values { background: var(--gray); padding: 80px 24px; }
+    .values-inner { max-width: 1100px; margin: 0 auto; }
+    .values-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--brown); margin-bottom: 10px; }
+    .values h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: var(--dark); margin-bottom: 40px; }
+    .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+    .value-card { background: var(--white); border-radius: 12px; padding: 28px 24px; border-top: 4px solid var(--brown); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .value-icon { font-size: 2rem; margin-bottom: 14px; }
+    .value-card h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 10px; }
+    .value-card p { font-size: 0.87rem; color: var(--muted); line-height: 1.7; }
+    .cta-band { background: var(--brown); padding: 60px 24px; text-align: center; }
+    .cta-band h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .cta-band p { color: rgba(255,255,255,0.82); max-width: 520px; margin: 0 auto 28px; }
+    .btn-white { display: inline-block; background: var(--white); color: var(--brown); padding: 14px 32px; border-radius: var(--radius); font-weight: 700; font-size: 1rem; }
+    footer { background: var(--dark); padding: 48px 24px 24px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+    @media (max-width: 640px) { .footer-inner { grid-template-columns: 1fr; } }
+    .footer-brand { font-weight: 800; font-size: 1.05rem; color: var(--white); margin-bottom: 12px; }
+    .footer-brand span { color: #e0a870; }
+    .footer-desc { color: rgba(255,255,255,0.55); font-size: 0.85rem; line-height: 1.7; }
+    .footer-col h4 { color: rgba(255,255,255,0.5); font-size: 0.72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 14px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a { color: rgba(255,255,255,0.7); font-size: 0.88rem; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+    .footer-bottom p { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+    .footer-bottom a { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand"><a href="/">Sterling Heights <span>Carpet and Floors</span></a></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About Us</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/#contact">Free Estimate</a></li>
+    </ul>
+    <a href="tel:5863716409" class="btn-call">Call 586-371-6409</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </div>
+</nav>
+
+<div class="ph">
+  <div class="ph-inner">
+    <p class="ph-label">About Sterling Heights Carpet and Floors</p>
+    <h1>Sterling Heights&rsquo; Trusted Flooring Company</h1>
+    <p>Over 20 years of carpet and flooring experience. We bring our store right to your door &mdash; free estimates, evening and weekend appointments, and an amazing selection of flooring options.</p>
+  </div>
+</div>
+
+<div class="story">
+  <div>
+    <p class="story-label">Our Story</p>
+    <h2>Two Decades of Flooring Excellence in Sterling Heights</h2>
+    <p>Sterling Heights Carpet and Floors is the best place to call for any of your flooring needs. We have over 20 years of experience in all aspects of flooring and have built an amazing reputation in the Sterling Heights community.</p>
+    <p>We carry a huge selection of carpeting with different types of styles, colors, materials, and price ranges. We also have a great selection of other flooring such as hardwood floors, laminate floors, ceramic tile, custom vinyl tile, and many more.</p>
+    <p>Our goal is to make shopping for carpeting and flooring as easy as possible, while still offering the highest quality products, services, and installation. Most of our new customers come to us from referrals from satisfied past customers.</p>
+  </div>
+  <div>
+    <p class="story-label">Shop at Home</p>
+    <h2>We Bring the Store to You</h2>
+    <p>At Sterling Heights Carpet and Floors, we bring our store to your door and bring tons of samples for you to match up with your wall colors and furniture. There is no longer a need to drive around town to all the retail carpet stores and big box stores.</p>
+    <p>Our specialist will arrive on-site with a wide array of samples including countless colors and styles. They are there to offer expert advice, take accurate measurements, and provide a no-cost estimate for your flooring project.</p>
+    <p>We offer timeslots during evenings and weekends to fit around your schedule &mdash; because we work around you, not the other way around.</p>
+  </div>
+</div>
+
+<div class="values">
+  <div class="values-inner">
+    <p class="values-label">Why Choose Us</p>
+    <h2>What Makes Sterling Heights Carpet and Floors Different</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">&#127968;</div>
+        <h3>Shop at Home Service</h3>
+        <p>We bring hundreds of carpet and flooring samples right to your door. Match them against your walls, furniture, and lighting in your own space before making any decision.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">&#127942;</div>
+        <h3>Award-Winning Service</h3>
+        <p>Named the Top Carpet and Flooring Store in Metro Detroit by Metro Detroit Review in July 2022. Our reputation is built on 20+ years of happy customers.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">&#128197;</div>
+        <h3>Evening &amp; Weekend Appointments</h3>
+        <p>We schedule appointments when it&rsquo;s convenient for you &mdash; evenings, weekends, whatever works. No need to take time off work to shop for flooring.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">&#128200;</div>
+        <h3>Low Prices, No Retail Overhead</h3>
+        <p>Because we come to you instead of maintaining a giant retail store, we save on overhead and pass those savings on to you. Great quality at prices you&rsquo;ll love.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-band">
+  <h2>Ready to Schedule Your Free In-Home Estimate?</h2>
+  <p>Call us today to set up an appointment. We&rsquo;ll come to you with samples and a free estimate &mdash; evenings and weekends available.</p>
+  <a href="tel:5863716409" class="btn-white">Call 586-371-6409</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Sterling Heights <span>Carpet and Floors</span></div>
+      <p class="footer-desc">Carpet and flooring installation in Sterling Heights MI and Metro Detroit. 20+ years of experience. Shop-at-home service. Free estimates. Evening and weekend appointments.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/#contact">Free Estimate</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="/services/">Carpeting</a></li>
+        <li><a href="/services/">Hardwood Floors</a></li>
+        <li><a href="/services/">Laminate Floors</a></li>
+        <li><a href="/services/">Commercial Flooring</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="yr"></span> Sterling Heights Carpet and Floors. All rights reserved.</p>
+    <div style="display:flex;gap:16px;">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/resources/">Resources</a>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  document.getElementById("hamburger").addEventListener("click", function() {
+    document.getElementById("navLinks").classList.toggle("open");
+  });
+</script>
+</body>
+</html>

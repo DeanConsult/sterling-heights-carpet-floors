@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sterling Heights Carpet and Floors | Shop at Home Flooring</title>
+  <link rel="canonical" href="https://www.shcarpetandfloors.com/" />
+  <meta name="description" content="Sterling Heights Carpet and Floors — Top Carpet &amp; Flooring Store in Metro Detroit. Shop at home service, 20+ years experience, 48-hour installation, free estimates. Call 586-371-6409." />
+  <meta name="robots" content="index, follow" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Sterling Heights Carpet and Floors",
+    "url": "https://www.shcarpetandfloors.com",
+    "telephone": "+15863716409",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8301 16 1/2 Mile Rd Unit 9",
+      "addressLocality": "Sterling Heights",
+      "addressRegion": "MI",
+      "postalCode": "48312",
+      "addressCountry": "US"
+    },
+    "description": "Sterling Heights Carpet and Floors offers carpet, hardwood, laminate, tile, and vinyl flooring with shop-at-home service in Sterling Heights MI and Metro Detroit.",
+    "areaServed": "Sterling Heights, MI",
+    "openingHours": "By appointment"
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --brown: #7c4a1f; --brown-dark: #5e3718; --dark: #1c1008; --white: #ffffff; --gray: #f5f6f8; --muted: #6b7280; --radius: 8px; --shadow: 0 4px 20px rgba(0,0,0,0.12); }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; color: #1a1a1a; background: var(--white); }
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    nav { background: var(--dark); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-brand { color: var(--white); font-weight: 800; font-size: 1.05rem; line-height: 1.2; }
+    .nav-brand span { color: #e0a870; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.85); font-size: 0.92rem; font-weight: 500; }
+    .btn-call { background: var(--brown); color: var(--white); padding: 9px 20px; border-radius: var(--radius); font-weight: 700; font-size: 0.88rem; white-space: nowrap; }
+    .hamburger { display: none; background: none; border: none; font-size: 1.6rem; color: var(--white); cursor: pointer; padding: 4px 8px; }
+    @media (max-width: 768px) {
+      .nav-links { display: flex; position: fixed; top: 64px; left: 0; right: 0; background: var(--dark); flex-direction: column; gap: 0; padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+      .nav-links.open { max-height: 320px; padding-top: 8px; padding-bottom: 8px; }
+      .nav-links a { display: block; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+      .btn-call { display: none; }
+      .hamburger { display: block; }
+    }
+
+    /* HERO */
+    .hero { position: relative; background: linear-gradient(135deg, #1c0e06 0%, #3a1c0a 100%); padding: 80px 24px; overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; background-image: url('images/hero-flooring.jpg'); background-size: cover; background-position: center; opacity: 0.22; }
+    .hero-inner { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 420px; gap: 48px; align-items: center; }
+    @media (max-width: 860px) { .hero-inner { grid-template-columns: 1fr; } }
+    .hero-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #e0a870; margin-bottom: 12px; }
+    .hero h1 { font-size: clamp(1.9rem, 4.5vw, 3rem); font-weight: 900; color: var(--white); line-height: 1.15; margin-bottom: 20px; }
+    .hero h1 em { font-style: normal; color: #e0a870; }
+    .hero-desc { color: rgba(255,255,255,0.75); line-height: 1.75; margin-bottom: 28px; max-width: 520px; font-size: 1.05rem; }
+    .hero-bullets { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 32px; }
+    .hero-bullets li { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,0.85); font-size: 0.95rem; }
+    .hero-bullets li::before { content: ''; width: 8px; height: 8px; background: #e0a870; border-radius: 50%; flex-shrink: 0; }
+    .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary { background: var(--brown); color: var(--white); padding: 14px 28px; border-radius: var(--radius); font-weight: 700; font-size: 1rem; display: inline-block; }
+    .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.4); padding: 14px 28px; border-radius: var(--radius); font-weight: 700; font-size: 1rem; display: inline-block; }
+
+    /* HERO CARD */
+    .hero-card { background: var(--white); border-radius: 16px; padding: 32px 28px; box-shadow: var(--shadow); }
+    .hero-card-title { font-size: 1.1rem; font-weight: 800; color: var(--dark); margin-bottom: 20px; text-align: center; }
+    .form-group { margin-bottom: 14px; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 14px; border: 1.5px solid #d1d5db; border-radius: var(--radius); font-size: 0.92rem; font-family: inherit; background: var(--white); color: #1a1a1a; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--brown); }
+    .form-group textarea { resize: vertical; min-height: 80px; }
+    .btn-submit { width: 100%; background: var(--brown); color: var(--white); border: none; padding: 14px; border-radius: var(--radius); font-weight: 700; font-size: 1rem; cursor: pointer; }
+    .btn-submit:hover { background: var(--brown-dark); }
+    .badge-row { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 16px; }
+    .badge-row img { height: 38px; }
+    .badge-row span { font-size: 0.78rem; color: var(--muted); }
+
+    /* TRUST BAR */
+    .trust { background: var(--brown); padding: 20px 24px; }
+    .trust-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: center; flex-wrap: wrap; gap: 32px; }
+    .trust-item { display: flex; align-items: center; gap: 8px; color: var(--white); font-size: 0.88rem; font-weight: 600; }
+    .trust-item::before { content: '✓'; font-weight: 800; color: #e0a870; }
+
+    /* SERVICES GRID */
+    .services { padding: 80px 24px; background: var(--gray); }
+    .services-inner { max-width: 1100px; margin: 0 auto; }
+    .sec-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--brown); margin-bottom: 10px; }
+    .sec-title { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: var(--dark); margin-bottom: 12px; }
+    .sec-sub { color: var(--muted); max-width: 560px; line-height: 1.75; margin-bottom: 48px; }
+    .svc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .svc-card { background: var(--white); border-radius: 14px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .svc-img { height: 180px; object-fit: cover; width: 100%; display: block; background: #2a1a0a; }
+    .svc-body { padding: 22px 20px; }
+    .svc-body h3 { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+    .svc-body p { font-size: 0.87rem; color: var(--muted); line-height: 1.7; }
+
+    /* SHOP AT HOME */
+    .shopathome { max-width: 1100px; margin: 0 auto; padding: 80px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    @media (max-width: 768px) { .shopathome { grid-template-columns: 1fr; } }
+    .shopathome-steps { display: flex; flex-direction: column; gap: 24px; margin-top: 28px; }
+    .step { display: flex; gap: 16px; align-items: flex-start; }
+    .step-num { background: var(--brown); color: var(--white); font-weight: 800; font-size: 0.9rem; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+    .step-body h4 { font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+    .step-body p { font-size: 0.87rem; color: var(--muted); line-height: 1.65; }
+    .shopathome-aside { background: var(--gray); border-radius: 16px; padding: 36px 32px; }
+    .shopathome-aside h3 { font-size: 1.3rem; font-weight: 800; color: var(--dark); margin-bottom: 20px; }
+    .feature-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+    .feature-list li { display: flex; align-items: center; gap: 12px; font-size: 0.92rem; color: #1a1a1a; }
+    .feature-list li::before { content: '✓'; color: var(--brown); font-weight: 800; font-size: 1rem; flex-shrink: 0; }
+
+    /* AWARD BAND */
+    .award { background: var(--dark); padding: 60px 24px; text-align: center; }
+    .award-inner { max-width: 680px; margin: 0 auto; }
+    .award-trophy { font-size: 3rem; margin-bottom: 16px; }
+    .award h2 { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: 800; color: var(--white); margin-bottom: 12px; }
+    .award p { color: rgba(255,255,255,0.72); line-height: 1.7; }
+    .award-badge { display: inline-block; margin-top: 20px; background: var(--brown); color: var(--white); padding: 8px 20px; border-radius: 20px; font-size: 0.85rem; font-weight: 700; }
+
+    /* REVIEWS */
+    .reviews { padding: 80px 24px; }
+    .reviews-inner { max-width: 1100px; margin: 0 auto; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 40px; }
+    .review-card { background: var(--gray); border-radius: 14px; padding: 28px 24px; }
+    .stars { color: #f59e0b; font-size: 1.1rem; letter-spacing: 2px; margin-bottom: 12px; }
+    .review-text { font-size: 0.9rem; color: #374151; line-height: 1.75; font-style: italic; margin-bottom: 16px; }
+    .reviewer { font-size: 0.82rem; font-weight: 700; color: var(--dark); }
+
+    /* FAQ */
+    .faq { background: var(--gray); padding: 80px 24px; }
+    .faq-inner { max-width: 760px; margin: 0 auto; }
+    .faq-list { margin-top: 40px; display: flex; flex-direction: column; gap: 16px; }
+    .faq-item { background: var(--white); border-radius: 10px; padding: 22px 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    .faq-item h3 { font-size: 0.97rem; font-weight: 700; color: var(--dark); margin-bottom: 10px; }
+    .faq-item p { font-size: 0.87rem; color: var(--muted); line-height: 1.75; }
+
+    /* CONTACT */
+    .contact { max-width: 1100px; margin: 0 auto; padding: 80px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    @media (max-width: 768px) { .contact { grid-template-columns: 1fr; } }
+    .contact-info h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: var(--dark); margin-bottom: 20px; }
+    .contact-info p { color: var(--muted); line-height: 1.8; margin-bottom: 16px; }
+    .contact-details { display: flex; flex-direction: column; gap: 14px; margin-top: 24px; }
+    .contact-detail { display: flex; gap: 12px; align-items: flex-start; }
+    .contact-detail-icon { background: var(--brown); color: var(--white); width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; flex-shrink: 0; }
+    .contact-detail-body strong { font-size: 0.85rem; font-weight: 700; color: var(--dark); display: block; margin-bottom: 2px; }
+    .contact-detail-body span { font-size: 0.87rem; color: var(--muted); }
+    .contact-form-box { background: var(--gray); border-radius: 16px; padding: 36px 32px; }
+    .contact-form-box h3 { font-size: 1.1rem; font-weight: 800; color: var(--dark); margin-bottom: 20px; }
+
+    /* CTA BAND */
+    .cta-band { background: var(--brown); padding: 60px 24px; text-align: center; }
+    .cta-band h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .cta-band p { color: rgba(255,255,255,0.82); max-width: 520px; margin: 0 auto 28px; }
+    .btn-white { display: inline-block; background: var(--white); color: var(--brown); padding: 14px 32px; border-radius: var(--radius); font-weight: 700; font-size: 1rem; }
+
+    /* FOOTER */
+    footer { background: var(--dark); padding: 48px 24px 24px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+    @media (max-width: 640px) { .footer-inner { grid-template-columns: 1fr; } }
+    .footer-brand { font-weight: 800; font-size: 1.05rem; color: var(--white); margin-bottom: 12px; }
+    .footer-brand span { color: #e0a870; }
+    .footer-desc { color: rgba(255,255,255,0.55); font-size: 0.85rem; line-height: 1.7; }
+    .footer-col h4 { color: rgba(255,255,255,0.5); font-size: 0.72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 14px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a { color: rgba(255,255,255,0.7); font-size: 0.88rem; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+    .footer-bottom p { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+    .footer-bottom a { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand"><a href="/">Sterling Heights <span>Carpet and Floors</span></a></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About Us</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="#contact">Free Estimate</a></li>
+    </ul>
+    <a href="tel:5863716409" class="btn-call">Call 586-371-6409</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div>
+      <p class="hero-label">Top Flooring Store &mdash; Metro Detroit</p>
+      <h1>Sterling Heights&rsquo; <em>Shop&nbsp;at&nbsp;Home</em> Flooring Experts</h1>
+      <p class="hero-desc">We bring our entire store right to your door &mdash; hundreds of carpet and flooring samples, expert advice, and a free written estimate. No need to leave home.</p>
+      <ul class="hero-bullets">
+        <li>Shop-at-home service &mdash; we come to you</li>
+        <li>Free in-home estimates &mdash; evenings &amp; weekends</li>
+        <li>48-hour installation on in-stock products</li>
+        <li>12 months interest-free financing available</li>
+        <li>20+ years of flooring experience</li>
+      </ul>
+      <div class="hero-cta-row">
+        <a href="tel:5863716409" class="btn-primary">Call 586-371-6409</a>
+        <a href="#contact" class="btn-outline">Free Estimate</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <p class="hero-card-title">Schedule a Free In-Home Appointment</p>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="" />
+        <input type="hidden" name="from_name" value="Sterling Heights Carpet and Floors" />
+        <input type="hidden" name="subject" value="New Lead — Sterling Heights Carpet and Floors" />
+        <input type="hidden" name="redirect" value="https://www.shcarpetandfloors.com/thank-you/" />
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Email Address" required />
+        </div>
+        <div class="form-group">
+          <select name="service" required>
+            <option value="" disabled selected>Type of Flooring</option>
+            <option>Carpeting</option>
+            <option>Hardwood Floors</option>
+            <option>Laminate Floors</option>
+            <option>Ceramic Tile</option>
+            <option>Vinyl Flooring</option>
+            <option>Commercial Flooring</option>
+            <option>Shop at Home Consultation</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Tell us about your project (optional)"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Request Free Estimate</button>
+      </form>
+      <div class="badge-row">
+        <img src="images/credible-3_25.png" alt="Trusted Local Flooring Company" />
+        <span>Trusted by Sterling Heights homeowners</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust">
+  <div class="trust-inner">
+    <div class="trust-item">20+ Years Experience</div>
+    <div class="trust-item">Shop at Home Service</div>
+    <div class="trust-item">Free Estimates</div>
+    <div class="trust-item">48-Hour Installation</div>
+    <div class="trust-item">Interest-Free Financing</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services">
+  <div class="services-inner">
+    <p class="sec-label">What We Offer</p>
+    <h2 class="sec-title">Complete Flooring Services for Sterling Heights Homes</h2>
+    <p class="sec-sub">From soft carpet to stunning hardwood, we carry everything you need. Our specialist brings it all to you &mdash; free of charge, no obligation.</p>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <img src="images/carpet-install.jpg" alt="Carpet Installation" class="svc-img" />
+        <div class="svc-body">
+          <h3>Carpet Installation</h3>
+          <p>Huge selection of carpet styles, colors, and materials in every price range. Loop, plush, Berber, level cut &mdash; Shaw and Mohawk brands. We bring hundreds of samples right to your living room.</p>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="images/hardwood-floor.jpg" alt="Hardwood Floors" class="svc-img" />
+        <div class="svc-body">
+          <h3>Hardwood Floors</h3>
+          <p>Beautiful, durable, and long-lasting. Solid and engineered hardwood in multiple species and stain colors. Our experts will advise on the best option for your traffic patterns and sun exposure.</p>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="images/laminate-floor.jpg" alt="Laminate Flooring" class="svc-img" />
+        <div class="svc-body">
+          <h3>Laminate Floors</h3>
+          <p>A stunning, affordable alternative to hardwood. Modern laminate looks incredibly realistic, cleans easily, and stands up to kids and pets. Great for any room in the house.</p>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="images/ceramic-tile.jpg" alt="Ceramic Tile" class="svc-img" />
+        <div class="svc-body">
+          <h3>Ceramic Tile &amp; Vinyl</h3>
+          <p>Tile and vinyl for kitchens, bathrooms, entryways, and more. Durable, moisture-resistant, and available in countless styles. We also offer luxury vinyl plank (LVP) and linoleum.</p>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="images/commercial-floor.jpg" alt="Commercial Flooring" class="svc-img" />
+        <div class="svc-body">
+          <h3>Commercial Flooring</h3>
+          <p>We handle flooring for offices, warehouses, apartment complexes, and retail locations. Evening and weekend scheduling to keep your business running without interruption.</p>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="images/outdoor-carpet.jpg" alt="Outdoor Carpeting" class="svc-img" />
+        <div class="svc-body">
+          <h3>Outdoor &amp; Specialty</h3>
+          <p>Outdoor carpeting for patios, porches, and pool areas. Linoleum for utility areas and kitchens. Whatever your flooring need, we&rsquo;ve seen it &mdash; and we can handle it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP AT HOME SECTION -->
+<section>
+  <div class="shopathome">
+    <div>
+      <p class="sec-label">Our Signature Service</p>
+      <h2 class="sec-title" style="margin-bottom:0;">How Shop at Home Works</h2>
+      <div class="shopathome-steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4>Call or Submit a Request</h4>
+            <p>Give us a call at 586-371-6409 or fill out our form. Tell us a little about your project and we&rsquo;ll set up a convenient time to meet.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4>We Come to Your Home</h4>
+            <p>Our flooring specialist arrives at your door with a car full of samples &mdash; carpet, hardwood, laminate, tile &mdash; so you can compare options in your own space, with your own lighting and d&eacute;cor.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h4>Get a Free Written Estimate</h4>
+            <p>We take accurate measurements and walk you through pricing. You&rsquo;ll receive a written estimate before we leave &mdash; no surprises, no pressure.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h4>Fast Professional Installation</h4>
+            <p>Once you choose your flooring, we schedule installation. In-stock products are available for 48-hour installation. Our crew is clean, professional, and respectful of your home.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shopathome-aside">
+      <h3>Why Our Customers Love Us</h3>
+      <ul class="feature-list">
+        <li>No need to drive to retail stores or big box chains</li>
+        <li>Match samples to your walls, furniture &amp; lighting</li>
+        <li>Expert advice with no sales pressure</li>
+        <li>Evening &amp; weekend appointments available</li>
+        <li>Pricing that beats most retail stores</li>
+        <li>48-hour installation on in-stock products</li>
+        <li>12 months interest-free financing from Synchrony Bank</li>
+        <li>Shaw Floors &amp; Mohawk Carpet brands available</li>
+        <li>20+ years of flooring installation experience</li>
+        <li>Rated Top Flooring Store in Metro Detroit (2022)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- AWARD -->
+<div class="award">
+  <div class="award-inner">
+    <div class="award-trophy">&#127942;</div>
+    <h2>Top Carpet and Flooring Store in Metro Detroit</h2>
+    <p>Sterling Heights Carpet and Floors was recognized as the Top Carpet and Flooring Store in Metro Detroit by Metro Detroit Review. This recognition reflects 20+ years of dedication to quality products, expert installation, and outstanding customer service.</p>
+    <span class="award-badge">Metro Detroit Review &mdash; July 7, 2022</span>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<section class="reviews">
+  <div class="reviews-inner">
+    <p class="sec-label">Customer Reviews</p>
+    <h2 class="sec-title">What Sterling Heights Homeowners Say</h2>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">&ldquo;The shop-at-home experience was incredible. The specialist brought so many samples and helped us find the perfect carpet to match our living room. Installed within a week and it looks amazing.&rdquo;</p>
+        <div class="reviewer">Linda M. &mdash; Sterling Heights, MI</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">&ldquo;We had hardwood installed throughout the first floor. The price was better than any store we visited and the quality of the work was outstanding. These guys really know what they&rsquo;re doing.&rdquo;</p>
+        <div class="reviewer">Tony B. &mdash; Sterling Heights, MI</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">&ldquo;They came on a Saturday evening and brought tons of samples. By Monday I had new carpet in my bedroom. No hassle, no wasted time, and the price was very reasonable. Highly recommend.&rdquo;</p>
+        <div class="reviewer">Karen S. &mdash; Macomb Township, MI</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="faq-inner">
+    <p class="sec-label">Common Questions</p>
+    <h2 class="sec-title">Flooring FAQs</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>How does the shop-at-home service work?</h3>
+        <p>Call us or submit a request online. We&rsquo;ll schedule a time to visit your home with a large selection of samples &mdash; carpets, hardwood, laminate, tile, and more. Our specialist takes measurements, answers your questions, and provides a free written estimate. Evening and weekend appointments available.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How quickly can you install new floors?</h3>
+        <p>For in-stock products, we offer 48-hour installation. For special orders, lead times vary by product. We&rsquo;ll give you an accurate timeline at your free in-home appointment.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you offer financing?</h3>
+        <p>Yes. We offer 12 months interest-free financing through Synchrony Bank. Ask about financing at your in-home appointment. Subject to credit approval.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What types of flooring do you carry?</h3>
+        <p>We carry carpet (loop, plush, Berber, level cut), hardwood floors, laminate floors, ceramic tile, vinyl tile, linoleum, and outdoor carpeting. We carry Shaw and Mohawk brands, among others.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you do commercial flooring?</h3>
+        <p>Yes. We have experience installing flooring in offices, warehouses, apartment complexes, and retail locations. We work around your schedule and can accommodate evenings and weekends to minimize disruption to your business.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Where do you serve?</h3>
+        <p>We are based in Sterling Heights, MI and serve the surrounding Metro Detroit area. Call us to confirm service to your area.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <h2>Ready to Update Your Floors?</h2>
+  <p>Call us today or submit a request and we&rsquo;ll come to you with samples and a free in-home estimate &mdash; evenings and weekends welcome.</p>
+  <a href="tel:5863716409" class="btn-white">Call 586-371-6409</a>
+</div>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+  <div class="contact-info">
+    <p class="sec-label">Get in Touch</p>
+    <h2>Request a Free In-Home Estimate</h2>
+    <p>Fill out the form or give us a call. We&rsquo;ll set up a time to visit your home with samples and provide a free written estimate at no obligation.</p>
+    <p>By appointment only. Evening and weekend appointments available.</p>
+    <div class="contact-details">
+      <div class="contact-detail">
+        <div class="contact-detail-icon">&#128222;</div>
+        <div class="contact-detail-body">
+          <strong>Phone</strong>
+          <span><a href="tel:5863716409" style="color:var(--brown);">586-371-6409</a></span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">&#128205;</div>
+        <div class="contact-detail-body">
+          <strong>Address</strong>
+          <span>8301 16&frac12; Mile Rd Unit 9, Sterling Heights, MI 48312</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">&#128197;</div>
+        <div class="contact-detail-body">
+          <strong>Hours</strong>
+          <span>By Appointment &mdash; Evenings &amp; Weekends Available</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-form-box">
+    <h3>Request Your Free Estimate</h3>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="" />
+      <input type="hidden" name="from_name" value="Sterling Heights Carpet and Floors" />
+      <input type="hidden" name="subject" value="New Lead — Sterling Heights Carpet and Floors" />
+      <input type="hidden" name="redirect" value="https://www.shcarpetandfloors.com/thank-you/" />
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email Address" required />
+      </div>
+      <div class="form-group">
+        <select name="service" required>
+          <option value="" disabled selected>Type of Flooring</option>
+          <option>Carpeting</option>
+          <option>Hardwood Floors</option>
+          <option>Laminate Floors</option>
+          <option>Ceramic Tile</option>
+          <option>Vinyl Flooring</option>
+          <option>Commercial Flooring</option>
+          <option>Shop at Home Consultation</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Tell us about your project (optional)"></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Request Free Estimate</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Sterling Heights <span>Carpet and Floors</span></div>
+      <p class="footer-desc">Carpet and flooring installation in Sterling Heights MI and Metro Detroit. 20+ years of experience. Shop-at-home service, free estimates, 48-hour installation, and interest-free financing.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="#contact">Free Estimate</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="/services/">Carpeting</a></li>
+        <li><a href="/services/">Hardwood Floors</a></li>
+        <li><a href="/services/">Laminate Floors</a></li>
+        <li><a href="/services/">Commercial Flooring</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="yr"></span> Sterling Heights Carpet and Floors. All rights reserved.</p>
+    <div style="display:flex;gap:16px;">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/resources/">Resources</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  document.getElementById("hamburger").addEventListener("click", function() {
+    document.getElementById("navLinks").classList.toggle("open");
+  });
+</script>
+</body>
+</html>

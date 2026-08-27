@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flooring Services | Sterling Heights Carpet and Floors</title>
+  <link rel="canonical" href="https://www.shcarpetandfloors.com/services/" />
+  <meta name="description" content="Sterling Heights Carpet and Floors offers carpet, hardwood, laminate, ceramic tile, vinyl, and commercial flooring in Sterling Heights MI. Free in-home estimates." />
+  <meta name="robots" content="index, follow" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --brown: #7c4a1f; --brown-dark: #5e3718; --dark: #1c1008; --white: #ffffff; --gray: #f5f6f8; --muted: #6b7280; --radius: 8px; --shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; color: #1a1a1a; background: var(--white); }
+    a { color: inherit; text-decoration: none; }
+    nav { background: var(--dark); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-brand { color: var(--white); font-weight: 800; font-size: 1.05rem; line-height: 1.2; }
+    .nav-brand span { color: #e0a870; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.85); font-size: 0.92rem; font-weight: 500; }
+    .btn-call { background: var(--brown); color: var(--white); padding: 9px 20px; border-radius: var(--radius); font-weight: 700; font-size: 0.88rem; white-space: nowrap; }
+    .hamburger { display: none; background: none; border: none; font-size: 1.6rem; color: var(--white); cursor: pointer; padding: 4px 8px; }
+    @media (max-width: 768px) {
+      .nav-links { display: flex; position: fixed; top: 64px; left: 0; right: 0; background: var(--dark); flex-direction: column; gap: 0; padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+      .nav-links.open { max-height: 320px; padding-top: 8px; padding-bottom: 8px; }
+      .nav-links a { display: block; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+      .btn-call { display: none; }
+      .hamburger { display: block; }
+    }
+    .ph { background: var(--dark); padding: 60px 24px; }
+    .ph-inner { max-width: 1100px; margin: 0 auto; }
+    .ph-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #e0a870; margin-bottom: 10px; }
+    .ph h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; color: var(--white); margin-bottom: 14px; }
+    .ph p { color: rgba(255,255,255,0.72); max-width: 580px; line-height: 1.75; }
+    .section { max-width: 1100px; margin: 0 auto; padding: 80px 24px; }
+    .section-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--brown); margin-bottom: 10px; }
+    .section-title { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: var(--dark); margin-bottom: 14px; }
+    .section-sub { color: var(--muted); max-width: 600px; line-height: 1.75; margin-bottom: 48px; }
+    .services-list { display: flex; flex-direction: column; gap: 32px; }
+    .service-block { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; padding-bottom: 32px; border-bottom: 1px solid #e5e7eb; }
+    .service-block:last-child { border-bottom: none; }
+    @media (max-width: 768px) { .service-block { grid-template-columns: 1fr; } }
+    .service-block-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--brown); margin-bottom: 8px; }
+    .service-block h2 { font-size: 1.3rem; font-weight: 800; color: var(--dark); margin-bottom: 12px; }
+    .service-block p { color: var(--muted); line-height: 1.8; }
+    .service-block-aside { background: var(--gray); border-radius: 10px; padding: 24px; border-left: 4px solid var(--brown); }
+    .service-block-aside h3 { font-size: 0.92rem; font-weight: 700; color: var(--dark); margin-bottom: 12px; }
+    .service-block-aside ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .service-block-aside ul li { font-size: 0.87rem; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+    .service-block-aside ul li::before { content: ''; width: 6px; height: 6px; background: var(--brown); border-radius: 50%; flex-shrink: 0; }
+    .quick-list { background: var(--gray); padding: 60px 24px; }
+    .quick-inner { max-width: 1100px; margin: 0 auto; }
+    .quick-inner h2 { font-size: 1.4rem; font-weight: 800; color: var(--dark); margin-bottom: 28px; }
+    .quick-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+    .quick-item { background: var(--white); border-radius: 8px; padding: 12px 16px; font-size: 0.87rem; font-weight: 600; color: var(--dark); border-left: 3px solid var(--brown); box-shadow: var(--shadow); }
+    .cta-band { background: var(--brown); padding: 60px 24px; text-align: center; }
+    .cta-band h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .cta-band p { color: rgba(255,255,255,0.82); max-width: 520px; margin: 0 auto 28px; }
+    .btn-white { display: inline-block; background: var(--white); color: var(--brown); padding: 14px 32px; border-radius: var(--radius); font-weight: 700; font-size: 1rem; }
+    footer { background: var(--dark); padding: 48px 24px 24px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+    @media (max-width: 640px) { .footer-inner { grid-template-columns: 1fr; } }
+    .footer-brand { font-weight: 800; font-size: 1.05rem; color: var(--white); margin-bottom: 12px; }
+    .footer-brand span { color: #e0a870; }
+    .footer-desc { color: rgba(255,255,255,0.55); font-size: 0.85rem; line-height: 1.7; }
+    .footer-col h4 { color: rgba(255,255,255,0.5); font-size: 0.72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 14px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a { color: rgba(255,255,255,0.7); font-size: 0.88rem; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+    .footer-bottom p { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+    .footer-bottom a { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand"><a href="/">Sterling Heights <span>Carpet and Floors</span></a></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About Us</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/#contact">Free Estimate</a></li>
+    </ul>
+    <a href="tel:5863716409" class="btn-call">Call 586-371-6409</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </div>
+</nav>
+
+<div class="ph">
+  <div class="ph-inner">
+    <p class="ph-label">What We Do</p>
+    <h1>Flooring Services in Sterling Heights MI</h1>
+    <p>Sterling Heights Carpet and Floors has just about any type of flooring you may need. We bring our entire store right to your door for a free in-home estimate.</p>
+  </div>
+</div>
+
+<div class="section">
+  <p class="section-label">Our Services</p>
+  <h2 class="section-title">Complete Flooring Solutions in Sterling Heights MI</h2>
+  <p class="section-sub">From carpet to hardwood, laminate to tile, we handle every type of flooring for residential and commercial customers. If you don&rsquo;t see what you need, just ask.</p>
+
+  <div class="services-list">
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Most Popular</p>
+        <h2>Carpeting</h2>
+        <p>At Sterling Heights Carpet and Floors, we are experts in all things carpeting. We have decades of experience installing carpets on every kind of site imaginable. We arrive on-site with hundreds of different styles and colors for you to look through &mdash; styles like loop, plush, level cut, and Berber, each in a multitude of colors. We have strong relationships with renowned carpet manufacturers including Kraus and Shaw Carpet to ensure you get the best product at the best price.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Carpet Styles We Carry</h3>
+        <ul>
+          <li>Loop carpet</li>
+          <li>Plush carpet</li>
+          <li>Level cut carpet</li>
+          <li>Berber carpet</li>
+          <li>Outdoor carpeting</li>
+          <li>Shaw &amp; Mohawk brand carpet</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Premium Flooring</p>
+        <h2>Hardwood Floors</h2>
+        <p>Hardwood floors are one of the best flooring options available. They are very easy to maintain, and if properly cared for, they can last 20&ndash;30 years &mdash; all while being some of the best-looking floors out there. Sterling Heights Carpet and Floors has been installing hardwood floors since our inception. From selection to installation to care, we are with you all the way to make sure your hardwood floors come out perfect. We advise you on important factors like sun exposure and traffic patterns.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Hardwood Options</h3>
+        <ul>
+          <li>Solid hardwood floors</li>
+          <li>Engineered hardwood</li>
+          <li>Multiple wood species available</li>
+          <li>Countless stain colors</li>
+          <li>Matte, satin &amp; gloss finishes</li>
+          <li>Expert installation &amp; care advice</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Affordable Alternative</p>
+        <h2>Laminate Floors</h2>
+        <p>Laminate floors are becoming increasingly popular as they are a cheaper and great-looking alternative to hardwood floors. Modern laminate is incredibly realistic in appearance and far more durable than many people expect. At your in-home appointment, our specialist can advise you on the best kind of flooring for your specific project and walk you through all available options. Laminate is a great choice for high-traffic areas and households with children or pets.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Laminate Features</h3>
+        <ul>
+          <li>Realistic wood &amp; stone looks</li>
+          <li>Durable &amp; scratch-resistant</li>
+          <li>Easy to clean and maintain</li>
+          <li>Great for high-traffic areas</li>
+          <li>Pet and child friendly</li>
+          <li>Budget-friendly pricing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Tile &amp; Vinyl</p>
+        <h2>Ceramic Tile &amp; Vinyl Flooring</h2>
+        <p>We are well equipped to handle your ceramic tile, custom vinyl tile, and linoleum flooring needs. Ceramic tile is an excellent option for kitchens, bathrooms, and entryways due to its durability and moisture resistance. Vinyl and linoleum offer similar benefits at a more affordable price point and come in a wide variety of styles. Our specialist can guide you through all the options and help you pick the right product for each space in your home.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Tile &amp; Vinyl Options</h3>
+        <ul>
+          <li>Ceramic tile</li>
+          <li>Custom vinyl tile</li>
+          <li>Luxury vinyl plank (LVP)</li>
+          <li>Linoleum</li>
+          <li>Porcelain tile</li>
+          <li>Mosaic &amp; accent tile</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Business Flooring</p>
+        <h2>Commercial Flooring</h2>
+        <p>Sterling Heights Carpet and Floors&rsquo; experience is not limited to residential projects. We are just as comfortable installing carpeting in an office, warehouse, or apartment complex as we are in a home. We have seen it all, which means we are always ready to handle any project. Our evening and weekend availability means your workflow stays uninterrupted. Let us save your business time and money by bringing our store right to your location.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Commercial Settings</h3>
+        <ul>
+          <li>Office &amp; corporate spaces</li>
+          <li>Warehouses &amp; industrial</li>
+          <li>Apartment complexes</li>
+          <li>Retail locations</li>
+          <li>Restaurants &amp; hospitality</li>
+          <li>Evening &amp; weekend scheduling</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Our Signature Service</p>
+        <h2>Shop at Home &mdash; We Come to You</h2>
+        <p>At Sterling Heights Carpet and Floors, you never have to leave your home to shop for flooring. We bring our entire store to you. Our specialist arrives with a wide array of samples &mdash; carpets, hardwood, laminate, tile &mdash; so you can see how they look with your walls, furniture, and lighting. They will take accurate measurements, answer all your questions, and provide a no-cost estimate on the spot. Evening and weekend timeslots available to fit your schedule.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Shop at Home Includes</h3>
+        <ul>
+          <li>In-home flooring consultation</li>
+          <li>Hundreds of samples brought to you</li>
+          <li>Accurate measurements taken</li>
+          <li>Free written estimate</li>
+          <li>Evening &amp; weekend availability</li>
+          <li>No pressure, no obligation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Fast Turnaround</p>
+        <h2>48-Hour Installation</h2>
+        <p>Need new floors quickly? Sterling Heights Carpet and Floors offers 48-hour installation on in-stock products. Whether you have a quick rental turnover, a last-minute project, or simply don&rsquo;t want to wait, we can get your floors installed faster than any big box retailer. Call us for more information on what products are currently available for rapid installation.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Fast Install Highlights</h3>
+        <ul>
+          <li>48-hour installation on in-stock items</li>
+          <li>Great for rental turnovers</li>
+          <li>Last-minute project ready</li>
+          <li>Call to check in-stock availability</li>
+          <li>Professional installation crew</li>
+          <li>Clean-up included</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Financing</p>
+        <h2>12 Months Interest-Free Financing</h2>
+        <p>Get the flooring you want today and pay over time with 12 months interest-free financing from Synchrony Bank. We have partnered with Synchrony Bank to make your flooring project more affordable, so you never have to put off a project because of budget concerns. Ask about financing options at your free in-home appointment. Subject to credit approval.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Financing Details</h3>
+        <ul>
+          <li>12 months interest-free</li>
+          <li>Powered by Synchrony Bank</li>
+          <li>Apply at your appointment</li>
+          <li>Subject to credit approval</li>
+          <li>Covers carpet, hardwood &amp; more</li>
+          <li>Ask us for details</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <div>
+        <p class="service-block-label">Other Flooring</p>
+        <h2>Linoleum &amp; Outdoor Carpeting</h2>
+        <p>In addition to our main flooring categories, we also offer linoleum and outdoor carpeting for spaces that need a more specialized solution. Linoleum is a durable, environmentally friendly option that works well in kitchens and utility areas. Outdoor carpeting is ideal for porches, patios, pool areas, and other exterior spaces. Whatever your flooring need, chances are we have the right product for you.</p>
+      </div>
+      <div class="service-block-aside">
+        <h3>Specialty Flooring</h3>
+        <ul>
+          <li>Linoleum flooring</li>
+          <li>Outdoor carpeting</li>
+          <li>Porch &amp; patio applications</li>
+          <li>Pool area flooring</li>
+          <li>Utility &amp; laundry rooms</li>
+          <li>Custom applications available</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="quick-list">
+  <div class="quick-inner">
+    <h2>All Services at a Glance</h2>
+    <div class="quick-grid">
+      <div class="quick-item">Carpet Installation</div>
+      <div class="quick-item">Hardwood Floors</div>
+      <div class="quick-item">Laminate Floors</div>
+      <div class="quick-item">Ceramic Tile</div>
+      <div class="quick-item">Vinyl Tile</div>
+      <div class="quick-item">Linoleum</div>
+      <div class="quick-item">Outdoor Carpeting</div>
+      <div class="quick-item">Commercial Flooring</div>
+      <div class="quick-item">Residential Flooring</div>
+      <div class="quick-item">Shop at Home Service</div>
+      <div class="quick-item">48-Hour Installation</div>
+      <div class="quick-item">Free In-Home Estimates</div>
+      <div class="quick-item">Flooring Consultation</div>
+      <div class="quick-item">Synchrony Financing</div>
+      <div class="quick-item">Shaw Floors</div>
+      <div class="quick-item">Mohawk Carpet</div>
+      <div class="quick-item">Evening &amp; Weekend Appts</div>
+      <div class="quick-item">Mill-Direct Pricing</div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-band">
+  <h2>Ready to Get New Floors?</h2>
+  <p>Call today to schedule your free in-home estimate. We&rsquo;ll come to you with samples and a written estimate &mdash; no obligation, evenings and weekends available.</p>
+  <a href="tel:5863716409" class="btn-white">Call 586-371-6409</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Sterling Heights <span>Carpet and Floors</span></div>
+      <p class="footer-desc">Carpet and flooring installation in Sterling Heights MI and Metro Detroit. 20+ years of experience. Shop-at-home service. Free estimates.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/#contact">Free Estimate</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="/services/">Carpeting</a></li>
+        <li><a href="/services/">Hardwood Floors</a></li>
+        <li><a href="/services/">Laminate Floors</a></li>
+        <li><a href="/services/">Commercial Flooring</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="yr"></span> Sterling Heights Carpet and Floors. All rights reserved.</p>
+    <div style="display:flex;gap:16px;">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/resources/">Resources</a>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  document.getElementById("hamburger").addEventListener("click", function() {
+    document.getElementById("navLinks").classList.toggle("open");
+  });
+</script>
+</body>
+</html>
