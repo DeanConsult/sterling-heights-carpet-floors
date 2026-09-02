@@ -66,18 +66,30 @@
     .btn-primary { background: var(--brown); color: var(--white); padding: 14px 28px; border-radius: var(--radius); font-weight: 700; font-size: 1rem; display: inline-block; }
     .btn-outline { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.4); padding: 14px 28px; border-radius: var(--radius); font-weight: 700; font-size: 1rem; display: inline-block; }
 
-    /* HERO CARD */
-    .hero-card { background: var(--white); border-radius: 16px; padding: 32px 28px; box-shadow: var(--shadow); }
-    .hero-card-title { font-size: 1.1rem; font-weight: 800; color: var(--dark); margin-bottom: 20px; text-align: center; }
-    .form-group { margin-bottom: 14px; }
-    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 14px; border: 1.5px solid #d1d5db; border-radius: var(--radius); font-size: 0.92rem; font-family: inherit; background: var(--white); color: #1a1a1a; }
-    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--brown); }
-    .form-group textarea { resize: vertical; min-height: 80px; }
-    .btn-submit { width: 100%; background: var(--brown); color: var(--white); border: none; padding: 14px; border-radius: var(--radius); font-weight: 700; font-size: 1rem; cursor: pointer; }
-    .btn-submit:hover { background: var(--brown-dark); }
-    .badge-row { display: flex; justify-content: center; padding-bottom: 12px; }
-    .badge-row img { max-width: 100%; height: auto; }
-    .badge-row span { font-size: 0.78rem; color: var(--muted); }
+    /* HERO FORM PANEL */
+    .hero-form-panel { background: var(--white); display: flex; flex-direction: column; justify-content: center; overflow: hidden; border-radius: 12px; box-shadow: var(--shadow); }
+    .hero-form-credible { background: var(--white); padding: 16px 24px 0; display: flex; justify-content: center; align-items: center; }
+    .hero-form-credible img { max-width: 100%; height: auto; }
+    .hero-form-header { background: var(--brown); padding: 16px 24px; }
+    .hero-form-header h3 { font-size: 1.05rem; font-weight: 800; color: var(--white); margin-bottom: 2px; }
+    .hero-form-sub { font-size: 0.76rem; color: rgba(255,255,255,0.85); }
+    .hero-form-body { padding: 20px 24px 24px; }
+    .hf-group { display: flex; flex-direction: column; gap: 4px; margin-bottom: 10px; }
+    .hf-group label { font-size: 0.76rem; font-weight: 700; color: #374151; letter-spacing: .02em; }
+    .hf-group label .req { color: #c0392b; }
+    .hf-group input, .hf-group select, .hf-group textarea { padding: 9px 11px; border: 1.5px solid #e5e7eb; border-radius: 6px; font-size: 0.88rem; font-family: inherit; background: #fafafa; color: #1a1a1a; width: 100%; }
+    .hf-group input:focus, .hf-group select:focus, .hf-group textarea:focus { outline: none; border-color: var(--brown); background: var(--white); }
+    .hf-group textarea { resize: vertical; min-height: 68px; }
+    .hero-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .hf-checks { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 12px; }
+    .hf-check-label-head { font-size: 0.76rem; font-weight: 700; color: #374151; letter-spacing: .02em; margin-bottom: 6px; }
+    .hf-check-label-head .req { color: #c0392b; }
+    .hf-check { display: flex; align-items: center; gap: 7px; font-size: 0.82rem; font-weight: 500; cursor: pointer; color: #1a1a1a; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 5px; padding: 6px 8px; }
+    .hf-check:hover { border-color: var(--brown); }
+    .hf-check input[type="checkbox"] { accent-color: var(--brown); width: 14px; height: 14px; flex-shrink: 0; }
+    .hf-submit { background: var(--brown); color: var(--white); border: none; padding: 13px; border-radius: var(--radius); font-size: 0.95rem; font-weight: 800; cursor: pointer; width: 100%; font-family: inherit; letter-spacing: .04em; }
+    .hf-submit:hover { background: var(--brown-dark); }
+    @media (max-width: 860px) { .hero-form-panel { border-top: 4px solid var(--brown); } }
 
     /* TRUST BAR */
     .trust { background: var(--brown); padding: 20px 24px; }
@@ -207,43 +219,53 @@
         <a href="#contact" class="btn-outline">Free Estimate</a>
       </div>
     </div>
-    <div class="hero-card">
-      <div class="badge-row">
-        <img src="images/credible-3_25.png" alt="5 stars on Facebook, Google, and Yelp" />
+    <div class="hero-form-panel">
+      <div class="hero-form-credible">
+        <img src="images/credible-3_25.png" alt="5 stars on Facebook, Google, and Yelp" width="220" height="70" />
       </div>
-      <p class="hero-card-title">Schedule a Free In-Home Appointment</p>
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="52e01cb6-a48c-43a5-92ec-14ba3325b5c8" />
-        <input type="hidden" name="from_name" value="Sterling Heights Carpet and Floors" />
-        <input type="hidden" name="subject" value="New Lead — Sterling Heights Carpet and Floors" />
-        <input type="hidden" name="redirect" value="https://www.shcarpetandfloors.com/thank-you/" />
-        <div class="form-group">
-          <input type="text" name="name" placeholder="Your Name" required />
-        </div>
-        <div class="form-group">
-          <input type="tel" name="phone" placeholder="Phone Number" required />
-        </div>
-        <div class="form-group">
-          <input type="email" name="email" placeholder="Email Address" required />
-        </div>
-        <div class="form-group">
-          <select name="service" required>
-            <option value="" disabled selected>Type of Flooring</option>
-            <option>Carpeting</option>
-            <option>Hardwood Floors</option>
-            <option>Laminate Floors</option>
-            <option>Ceramic Tile</option>
-            <option>Vinyl Flooring</option>
-            <option>Commercial Flooring</option>
-            <option>Shop at Home Consultation</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <textarea name="message" placeholder="Tell us about your project (optional)"></textarea>
-        </div>
-        <button type="submit" class="btn-submit">Request Free Estimate</button>
-      </form>
+      <div class="hero-form-header">
+        <h3>Get a Free Estimate</h3>
+        <p class="hero-form-sub">We respond within 1 business hour</p>
+      </div>
+      <div class="hero-form-body">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="52e01cb6-a48c-43a5-92ec-14ba3325b5c8" />
+          <input type="hidden" name="subject" value="New Lead — Sterling Heights Carpet and Floors" />
+          <input type="hidden" name="from_name" value="Sterling Heights Carpet and Floors" />
+          <input type="hidden" name="redirect" value="https://www.shcarpetandfloors.com/thank-you/" />
+          <input type="checkbox" name="botcheck" style="display:none" />
+          <div class="hero-form-row">
+            <div class="hf-group">
+              <label>First Name <span class="req">*</span></label>
+              <input type="text" name="first_name" placeholder="First" required />
+            </div>
+            <div class="hf-group">
+              <label>Last Name <span class="req">*</span></label>
+              <input type="text" name="last_name" placeholder="Last" required />
+            </div>
+          </div>
+          <div class="hf-group">
+            <label>Email <span class="req">*</span></label>
+            <input type="email" name="email" required />
+          </div>
+          <div class="hf-group">
+            <label>Phone Number <span class="req">*</span></label>
+            <input type="tel" name="phone" required />
+          </div>
+          <p class="hf-check-label-head">Choose One or More <span class="req">*</span></p>
+          <div class="hf-checks">
+            <label class="hf-check"><input type="checkbox" name="service" value="New Carpeting" /> New Carpeting</label>
+            <label class="hf-check"><input type="checkbox" name="service" value="Hardwood Floors" /> Hardwood Floors</label>
+            <label class="hf-check"><input type="checkbox" name="service" value="Laminate Floors" /> Laminate Floors</label>
+            <label class="hf-check"><input type="checkbox" name="service" value="Other Floors" /> Other Floors</label>
+          </div>
+          <div class="hf-group">
+            <label>Comment <span class="req">*</span></label>
+            <textarea name="comment" required></textarea>
+          </div>
+          <button type="submit" class="hf-submit">SUBMIT</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
@@ -478,35 +500,40 @@
     <h3>Request Your Free Estimate</h3>
     <form action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="52e01cb6-a48c-43a5-92ec-14ba3325b5c8" />
-      <input type="hidden" name="from_name" value="Sterling Heights Carpet and Floors" />
       <input type="hidden" name="subject" value="New Lead — Sterling Heights Carpet and Floors" />
+      <input type="hidden" name="from_name" value="Sterling Heights Carpet and Floors" />
       <input type="hidden" name="redirect" value="https://www.shcarpetandfloors.com/thank-you/" />
-      <div class="form-group">
-        <input type="text" name="name" placeholder="Your Name" required />
+      <input type="checkbox" name="botcheck" style="display:none" />
+      <div class="hero-form-row">
+        <div class="hf-group">
+          <label>First Name <span class="req">*</span></label>
+          <input type="text" name="first_name" placeholder="First" required />
+        </div>
+        <div class="hf-group">
+          <label>Last Name <span class="req">*</span></label>
+          <input type="text" name="last_name" placeholder="Last" required />
+        </div>
       </div>
-      <div class="form-group">
-        <input type="tel" name="phone" placeholder="Phone Number" required />
+      <div class="hf-group">
+        <label>Email <span class="req">*</span></label>
+        <input type="email" name="email" required />
       </div>
-      <div class="form-group">
-        <input type="email" name="email" placeholder="Email Address" required />
+      <div class="hf-group">
+        <label>Phone Number <span class="req">*</span></label>
+        <input type="tel" name="phone" required />
       </div>
-      <div class="form-group">
-        <select name="service" required>
-          <option value="" disabled selected>Type of Flooring</option>
-          <option>Carpeting</option>
-          <option>Hardwood Floors</option>
-          <option>Laminate Floors</option>
-          <option>Ceramic Tile</option>
-          <option>Vinyl Flooring</option>
-          <option>Commercial Flooring</option>
-          <option>Shop at Home Consultation</option>
-          <option>Other</option>
-        </select>
+      <p class="hf-check-label-head">Choose One or More <span class="req">*</span></p>
+      <div class="hf-checks">
+        <label class="hf-check"><input type="checkbox" name="service" value="New Carpeting" /> New Carpeting</label>
+        <label class="hf-check"><input type="checkbox" name="service" value="Hardwood Floors" /> Hardwood Floors</label>
+        <label class="hf-check"><input type="checkbox" name="service" value="Laminate Floors" /> Laminate Floors</label>
+        <label class="hf-check"><input type="checkbox" name="service" value="Other Floors" /> Other Floors</label>
       </div>
-      <div class="form-group">
-        <textarea name="message" placeholder="Tell us about your project (optional)"></textarea>
+      <div class="hf-group">
+        <label>Comment <span class="req">*</span></label>
+        <textarea name="comment" required></textarea>
       </div>
-      <button type="submit" class="btn-submit">Request Free Estimate</button>
+      <button type="submit" class="hf-submit">SUBMIT</button>
     </form>
   </div>
 </section>
