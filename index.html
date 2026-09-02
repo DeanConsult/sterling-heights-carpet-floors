@@ -75,8 +75,8 @@
     .form-group textarea { resize: vertical; min-height: 80px; }
     .btn-submit { width: 100%; background: var(--brown); color: var(--white); border: none; padding: 14px; border-radius: var(--radius); font-weight: 700; font-size: 1rem; cursor: pointer; }
     .btn-submit:hover { background: var(--brown-dark); }
-    .badge-row { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 16px; }
-    .badge-row img { height: 38px; }
+    .badge-row { display: flex; justify-content: center; padding-bottom: 12px; }
+    .badge-row img { max-width: 100%; height: auto; }
     .badge-row span { font-size: 0.78rem; color: var(--muted); }
 
     /* TRUST BAR */
@@ -208,6 +208,9 @@
       </div>
     </div>
     <div class="hero-card">
+      <div class="badge-row">
+        <img src="images/credible-3_25.png" alt="5 stars on Facebook, Google, and Yelp" />
+      </div>
       <p class="hero-card-title">Schedule a Free In-Home Appointment</p>
       <form action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="52e01cb6-a48c-43a5-92ec-14ba3325b5c8" />
@@ -241,10 +244,6 @@
         </div>
         <button type="submit" class="btn-submit">Request Free Estimate</button>
       </form>
-      <div class="badge-row">
-        <img src="images/credible-3_25.png" alt="Trusted Local Flooring Company" />
-        <span>Trusted by Sterling Heights homeowners</span>
-      </div>
     </div>
   </div>
 </section>
