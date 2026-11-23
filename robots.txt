@@ -4,4 +4,4 @@ Disallow: /resources/
 Disallow: /privacy-policy/
 Disallow: /thank-you/
 
-Sitemap: https://www.shcarpetandfloors.com/sitemap.xml
+Sitemap: https://shcarpetandfloors.com/sitemap.xml
